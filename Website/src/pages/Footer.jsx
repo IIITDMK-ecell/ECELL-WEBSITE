@@ -87,7 +87,8 @@ const Footer = () => {
         }
 
         .logo-image {
-          width: clamp(120px, 15vw, 200px);
+          width: clamp(144px, 18vw, 240px);
+          margin-left: -10%;
           height: auto;
           max-width: 100%;
           object-fit: contain;
@@ -371,7 +372,7 @@ const Footer = () => {
           }
           
           .logo-image {
-            width: 100px;
+            width: 120px;
           }
           
           .social-links {
@@ -428,7 +429,7 @@ const Footer = () => {
           }
           
           .logo-image {
-            width: 130px;
+            width: 156px;
           }
           
           .social-links {
@@ -475,7 +476,7 @@ const Footer = () => {
           }
           
           .logo-image {
-            width: 150px;
+            width: 180px;
           }
           
           .contact-card {
@@ -501,7 +502,7 @@ const Footer = () => {
           }
           
           .logo-image {
-            width: 160px;
+            width: 192px;
           }
         }
 
@@ -518,7 +519,7 @@ const Footer = () => {
           }
           
           .logo-image {
-            width: 170px;
+            width: 204px;
           }
         }
 
@@ -535,7 +536,7 @@ const Footer = () => {
           }
           
           .logo-image {
-            width: 180px;
+            width: 216px;
           }
         }
 
@@ -554,7 +555,7 @@ const Footer = () => {
           }
           
           .logo-image {
-            width: 200px;
+            width: 240px;
           }
         }
 
@@ -580,7 +581,7 @@ const Footer = () => {
           }
           
           .logo-image {
-            width: 80px;
+            width: 96px;
           }
           
           .social-links {
@@ -679,6 +680,10 @@ const Footer = () => {
               src={ecellLogo} 
               alt="E-Cell IIITDM-K Logo" 
               className="logo-image"
+              style={{ cursor: 'pointer' }}
+              onClick={() => {
+                window.location.href = '/';
+              }} 
             />
             <div className="brand-text">
               {/* Add brand text here if needed */}

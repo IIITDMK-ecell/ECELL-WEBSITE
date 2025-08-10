@@ -39,7 +39,7 @@ body {
 
 .homepage-carousel-track {
   display: flex;
-  animation: homepage-scroll 15s linear infinite;
+  animation: homepage-scroll 21s linear infinite;
   width: calc(300px * 16); /* 8 members * 2 */
 }
 

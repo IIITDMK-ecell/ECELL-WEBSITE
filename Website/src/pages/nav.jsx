@@ -105,7 +105,7 @@ const Nav = () => {
         }
 
         .ecell-logo {
-          height: 60px;
+          height: 72px;
           width: auto;
           object-fit: contain;
           padding-left: 20px;
@@ -215,7 +215,7 @@ const Nav = () => {
           }
 
           .ecell-logo {
-            height: 40px;
+            height: 48px;
             width: auto;
             object-fit: contain;
             padding-left: 20px;
@@ -312,7 +312,7 @@ const Nav = () => {
           }
 
           .ecell-logo {
-            height: 30px;
+            height: 36px;
             width: auto;
             object-fit: contain;
             padding-left: 15px;
@@ -342,7 +342,7 @@ const Nav = () => {
           }
 
           .ecell-logo {
-            height: 25px;
+            height: 30px;
             width: auto;
             object-fit: contain;
             padding-left: 10px;
@@ -396,7 +396,9 @@ const Nav = () => {
 
       <header className="header">
         <nav className="navbar">
-          <img src={ecellLogo} alt="E-Cell Logo" className="ecell-logo" />
+          <img src={ecellLogo} alt="E-Cell Logo" className="ecell-logo" style={{ cursor: 'pointer' }} onClick={() => {
+            window.location.href = '/';
+          }} />
           
           <ul className="nav-links">
             <li><a className="nav-item" onClick={() => handleNavClick('/')}>HOME</a></li>

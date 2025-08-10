@@ -5,7 +5,43 @@ const teamMembers = [
   {
     name: 'Asmit Sahoo',
     role: 'Head Core',
-    image: '../assets/Leads/asmit.jpg',
+    image: '../assets/Leads/Asmit.jpeg',
+    linkedin: 'https://in.linkedin.com/in/asmitkum',
+  },
+  {
+    name: 'Vishal Singh',
+    role: 'Head Core',
+    image: '../assets/Leads/Vishal.jpeg',
+    linkedin: 'https://www.linkedin.com/in/vishal-singh-800421323/',
+  },
+  {
+    name: 'Rupkatha Suter',
+    role: 'Vice Core',
+    image: '../assets/Leads/Rupkatha.jpeg',
+    linkedin: 'https://linkedin.com/in/shaurya',
+  },
+  {
+    name: 'Ashrith Yathin',
+    role: 'Publicity Lead',
+    image: '../assets/Leads/Ashrith.jpeg',
+    linkedin: 'https://linkedin.com/in/pranil-punekar',
+  },
+  {
+    name: 'Sujal Gupta',
+    role: 'Tech Lead',
+    image: '../assets/Leads/Sujal.jpeg',
+    linkedin: 'https://linkedin.com/in/dev-falgun',
+  },
+  {
+    name: 'Grishmank Parate',
+    role: 'Events Lead',
+    image: '../assets/Leads/Grishmank.jpeg',
+    linkedin: 'https://linkedin.com/in/sarah-johnson',
+  },
+  {
+    name: 'Asmit Sahoo',
+    role: 'Head Core',
+    image: '../assets/Leads/Asmit.jpeg',
     linkedin: 'https://in.linkedin.com/in/asmitkum',
   },
   {
@@ -47,7 +83,7 @@ const TeamSection = () => {
 
   return (
     <section className="homepage-team-section">
-      <h2 className="homepage-team-title" data-aos="fade-right">Our Team</h2>
+      <h2 className="homepage-team-title" data-aos="fade-right">Core Team</h2>
       <p className="homepage-team-subtitle" data-aos="fade-left">An Institution backed up by talented and potential</p>
 
       <div className="homepage-carousel-container" data-aos="fade-up">
