@@ -1,5 +1,8 @@
 import React from 'react';
+
+
 import { useNavigate, useLocation } from 'react-router-dom';
+
 import ecellLogo from '../assets/images/ecell-logo.png'; 
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -7,6 +10,15 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Footer = () => {
   const navigate = useNavigate();
+
+
+  const handleLogoClick = () => {
+    navigate('/');
+    // Scroll to top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+
   const location = useLocation();
 
   const handleFooterNav = (target) => {
@@ -30,6 +42,7 @@ const Footer = () => {
       }
     }
   };
+
   return (
     <footer className="footer">
       <style jsx>{`
@@ -84,11 +97,11 @@ const Footer = () => {
           align-items: center;
           gap: clamp(10px, 2vw, 15px);
           flex-wrap: wrap;
+          margin-left: -10%;
         }
 
         .logo-image {
           width: clamp(144px, 18vw, 240px);
-          margin-left: -10%;
           height: auto;
           max-width: 100%;
           object-fit: contain;
@@ -680,10 +693,8 @@ const Footer = () => {
               src={ecellLogo} 
               alt="E-Cell IIITDM-K Logo" 
               className="logo-image"
+              onClick={handleLogoClick}
               style={{ cursor: 'pointer' }}
-              onClick={() => {
-                window.location.href = '/';
-              }} 
             />
             <div className="brand-text">
               {/* Add brand text here if needed */}

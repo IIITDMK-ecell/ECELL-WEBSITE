@@ -22,6 +22,8 @@ const Nav = () => {
       navigate('/teams');
     } else if (pathOrId === '/') {
       navigate('/');
+      // Scroll to top of the page
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (pathOrId === '#about') {
       // Check if we're already on the homepage
       if (location.pathname === '/') {
@@ -396,9 +398,13 @@ const Nav = () => {
 
       <header className="header">
         <nav className="navbar">
-          <img src={ecellLogo} alt="E-Cell Logo" className="ecell-logo" style={{ cursor: 'pointer' }} onClick={() => {
-            window.location.href = '/';
-          }} />
+          <img 
+            src={ecellLogo} 
+            alt="E-Cell Logo" 
+            className="ecell-logo" 
+            onClick={() => handleNavClick('/')}
+            style={{ cursor: 'pointer' }}
+          />
           
           <ul className="nav-links">
             <li><a className="nav-item" onClick={() => handleNavClick('/')}>HOME</a></li>
