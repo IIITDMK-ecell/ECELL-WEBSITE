@@ -1,4 +1,4 @@
- import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Pause, Play } from 'lucide-react';
 
 
@@ -182,10 +182,9 @@ const Gallery = () => {
                       loading="lazy"
                     />
                     {scale > 1.02 && (
-                      <div className="absolute inset-0 rounded-2xl shadow-[0_0_20px_rgba(244,103,9,0.5)]
- pointer-events-none" />
+                      <div className="absolute inset-0 rounded-2xl shadow-[0_0_20px_rgba(244,103,9,0.5)] pointer-events-none" />
                     )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl" />
+                    {/* Removed background gradient overlay */}
                     <div className="absolute bottom-4 left-4 right-4">
                       <h4 className="text-white font-semibold text-lg mb-1">
                         {image.alt}
@@ -197,8 +196,6 @@ const Gallery = () => {
             })}
           </div>
         </div>
-
-        <div className="absolute top-0 bottom-0 left-1/2 w-0.5 bg-gradient-to-b from-transparent via-purple-500 to-transparent opacity-30 pointer-events-none" />
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 mt-8">
