@@ -20,6 +20,8 @@ const Nav = () => {
       navigate('/events');
     } else if (pathOrId === '/teams') {
       navigate('/teams');
+    } else if (pathOrId === '/blog') {
+      navigate('/blog');
     } else if (pathOrId === '/') {
       navigate('/');
       // Scroll to top of the page
@@ -410,6 +412,7 @@ const Nav = () => {
             <li><a className="nav-item" onClick={() => handleNavClick('/')}>HOME</a></li>
             <li><a className="nav-item" onClick={() => handleNavClick('/events')}>EVENTS</a></li>
             <li><a className="nav-item" onClick={() => handleNavClick('/teams')}>TEAM</a></li>
+            <li><a className="nav-item" onClick={() => handleNavClick('/blog')}>BLOG</a></li>
             <li><a className="nav-item" onClick={() => handleNavClick('#gallery')}>GALLERY</a></li>
             <li><a className="nav-item" onClick={() => handleNavClick('#about')}>ABOUT US</a></li>
           </ul>

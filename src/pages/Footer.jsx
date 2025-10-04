@@ -23,7 +23,7 @@ const Footer = () => {
 
   const handleFooterNav = (target) => {
     // Simple route navigations
-    if (target === '/' || target === '/events' || target === '/teams') {
+    if (target === '/' || target === '/events' || target === '/teams' || target === '/blog') {
       navigate(target);
       return;
     }
@@ -60,6 +60,18 @@ const Footer = () => {
           justify-content: space-between;
           position: relative;
           min-height: clamp(400px, 70vh, 600px);
+          animation: fadeInFooter 0.8s ease-out;
+        }
+
+        @keyframes fadeInFooter {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
 
         .footer::before {
@@ -725,6 +737,7 @@ const Footer = () => {
             <li><a onClick={() => handleFooterNav('#about')} role="button">About Us</a></li>
             <li><a onClick={() => handleFooterNav('/events')} role="button">Events</a></li>
             <li><a onClick={() => handleFooterNav('/teams')} role="button">Team</a></li>
+            <li><a onClick={() => handleFooterNav('/blog')} role="button">Blog</a></li>
             <li><a onClick={() => handleFooterNav('#contact')} role="button">Contact</a></li>
           </ul>
         </div>

@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import Teams from './pages/Teams.jsx';
 import Events from './pages/Events.jsx';
+import Blog from './pages/Blog.jsx';
+import BlogPost from './pages/BlogPost.jsx';
 import useLenis from './pages/useLenis.jsx';
 
 
@@ -13,6 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/teams" element={<Teams />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
         {/* <Route path="/events" element={<Events />} /> */}
       </Routes>
     </Router>
