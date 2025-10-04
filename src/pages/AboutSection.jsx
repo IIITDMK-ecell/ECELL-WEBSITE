@@ -481,13 +481,14 @@ const About = () => {
         .section-title {
           position: absolute;
           top: clamp(30px, 5vh, 50px);
-          left: 50%;
-          transform: translateX(-50%);
+          left: 0;
+          right: 0;
           font-size: clamp(2rem, 5vw, 3rem);
           font-weight: 600;
           color: #fff;
           z-index: 100;
           text-align: center;
+          margin: 0 auto;
         }
 
         /* Large Desktop - 1441px and above */
@@ -979,7 +980,7 @@ const About = () => {
 
       <div className="scroll-container">
         <div className="slide-container">
-          <h1 className="section-title">Know Our E-CELL</h1>
+          <h1 className="section-title">Know Your E-CELL</h1>
 
           <div className="slide slide-0" data-slide="0">
             <div className="slide-content">
@@ -990,7 +991,7 @@ const About = () => {
             </div>
             <div className="slide-image">
             </div>
-            <div className="rocket-icon"></div>
+            <div className="rocket-icon">🚀</div>
           </div>
 
           <div className="slide slide-1" data-slide="1">

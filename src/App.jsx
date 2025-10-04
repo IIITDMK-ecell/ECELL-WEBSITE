@@ -4,11 +4,9 @@ import Teams from './pages/Teams.jsx';
 import Events from './pages/Events.jsx';
 import Blog from './pages/Blog.jsx';
 import BlogPost from './pages/BlogPost.jsx';
-import useLenis from './pages/useLenis.jsx';
 
 
 function App() {
-  useLenis();
   return (
     <Router>
       <Routes>
