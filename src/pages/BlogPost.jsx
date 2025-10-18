@@ -11,6 +11,11 @@ const BlogPost = () => {
   const [relatedBlogs, setRelatedBlogs] = useState([]);
   const [activeSection, setActiveSection] = useState('');
 
+  // Scroll to top when navigating between different blog articles
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
   // Function to handle smooth scrolling to sections
   const handleTocClick = (targetId) => {
     const element = document.getElementById(targetId);
