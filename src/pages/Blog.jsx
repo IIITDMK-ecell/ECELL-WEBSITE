@@ -7,89 +7,204 @@ import '../styles/Blog.css';
 const Blog = () => {
   const navigate = useNavigate();
   
-  // Sample blog data - you can expand this or integrate with a CMS later
+  // E-Cell IIITDM Blog Data
   const [blogs] = useState([
     {
       id: 1,
-      title: "The Startup Mindset: 5 Essential Traits Every Entrepreneur Needs",
-      excerpt: "Discover the core mindset shifts that separate successful entrepreneurs from the rest. Learn how to cultivate resilience, embrace failure, and think like a true innovator.",
+      title: "The Myth of a Perfect Idea",
+      excerpt: "Every student dreams of finding that perfect startup idea. But here's the truth: that moment doesn't exist. Learn why execution beats the perfect idea every single time.",
       author: "E-Cell IIITDM Kancheepuram",
-      date: "October 4, 2024",
-      readTime: "5 min read",
+      date: "October 15, 2024",
+      readTime: "8 min read",
       category: "Entrepreneurship",
-      image: "/assets/images/blog-startup-mindset.jpg",
+      image: "/assets/images/blog-perfect-idea.jpg",
       featured: true,
-      content: `
-        <h2>Introduction</h2>
-        <p>In the fast-paced world of entrepreneurship, success isn't just about having a great idea. It's about developing the right mindset that can navigate the challenges, uncertainties, and opportunities that come with building something from scratch.</p>
-        
-        <h2>1. Embrace Failure as a Learning Tool</h2>
-        <p>The most successful entrepreneurs understand that failure isn't the opposite of success—it's a stepping stone to it. Every failure provides valuable lessons that can't be learned in any classroom.</p>
-        
-        <blockquote>"Failure is simply the opportunity to begin again, this time more intelligently." - Henry Ford</blockquote>
-        
-        <h2>2. Cultivate Resilience</h2>
-        <p>Entrepreneurship is a marathon, not a sprint. The ability to bounce back from setbacks, maintain focus during tough times, and persist when others give up is what separates successful entrepreneurs from those who quit.</p>
-        
-        <h2>3. Think Customer-First</h2>
-        <p>Great entrepreneurs don't just solve problems they think are important—they solve problems that customers actually care about. This customer-centric approach ensures that your solutions have real market demand.</p>
-        
-        <h2>4. Embrace Continuous Learning</h2>
-        <p>The business landscape is constantly evolving. Successful entrepreneurs are lifelong learners who stay curious, adapt to new technologies, and continuously upgrade their skills.</p>
-        
-        <h2>5. Take Calculated Risks</h2>
-        <p>Entrepreneurship isn't about taking blind risks—it's about taking calculated ones. Successful entrepreneurs assess opportunities, minimize downside risks, and make informed decisions even with incomplete information.</p>
-        
-        <h2>Conclusion</h2>
-        <p>Developing an entrepreneurial mindset is a journey, not a destination. By embracing these five traits, you'll be better equipped to navigate the challenging but rewarding path of entrepreneurship. Remember, every successful entrepreneur started exactly where you are now.</p>
-      `
+      content: `Complete content will be in BlogPost.jsx`
     },
     {
       id: 2,
-      title: "From Idea to IPO: Understanding the Startup Funding Journey",
-      excerpt: "Navigate the complex world of startup funding from pre-seed to IPO. Learn about different funding stages, what investors look for, and how to prepare your startup for investment.",
+      title: "California Burrito: Selling Burritos in a Land of Biryani",
+      excerpt: "How do you convince millions of people to try—and love—a product they don't even understand? Learn how California Burrito made Mexican food a sensation in South India.",
       author: "E-Cell IIITDM Kancheepuram",
-      date: "September 28, 2024",
-      readTime: "8 min read",
-      category: "Funding",
-      image: "/assets/images/blog-funding-journey.jpg",
+      date: "October 12, 2024",
+      readTime: "10 min read",
+      category: "Success Stories",
+      image: "/assets/images/blog-california-burrito.jpg",
       featured: false,
-      content: `
-        <h2>Introduction</h2>
-        <p>Understanding the funding landscape is crucial for any entrepreneur looking to scale their startup. This comprehensive guide walks you through each stage of the funding journey.</p>
-        
-        <h2>Pre-Seed and Seed Funding</h2>
-        <p>The early stages of funding focus on proving your concept and building your MVP. Angels and early-stage VCs look for strong teams and market opportunity.</p>
-        
-        <h2>Series A and Beyond</h2>
-        <p>As your startup grows, later funding rounds focus on scaling operations, expanding markets, and achieving profitability milestones.</p>
-      `
+      content: `Complete content will be in BlogPost.jsx`
     },
     {
       id: 3,
-      title: "Building a Strong Team: The Foundation of Every Successful Startup",
-      excerpt: "Learn how to attract, hire, and retain top talent for your startup. Discover the key roles you need to fill and strategies for building a cohesive, high-performing team.",
+      title: "Urban Company: Building Trust in the Chaos",
+      excerpt: "How do you bring order, safety, and trust to a completely unorganized industry? Discover how Urban Company became a trust-building machine in India's local services sector.",
+      author: "E-Cell IIITDM Kancheepuram",
+      date: "October 10, 2024",
+      readTime: "9 min read",
+      category: "Success Stories",
+      image: "/assets/images/blog-urban-company.jpg",
+      featured: false,
+      content: `Complete content will be in BlogPost.jsx`
+    },
+    {
+      id: 4,
+      title: "Phool.co: Turning Temple Waste into Treasure",
+      excerpt: "From sacred flowers polluting the Ganges to sustainable leather alternatives—discover how Phool.co built a biotech startup from literal trash.",
+      author: "E-Cell IIITDM Kancheepuram",
+      date: "October 8, 2024",
+      readTime: "9 min read",
+      category: "Success Stories",
+      image: "/assets/images/blog-phool.jpg",
+      featured: false,
+      content: `Complete content will be in BlogPost.jsx`
+    },
+    {
+      id: 5,
+      title: "CRED: Making Bill Payments Feel Like a Privilege",
+      excerpt: "How do you turn a boring chore into an exclusive experience? Learn how CRED built a multi-billion dollar brand by rewarding India's most responsible financial citizens.",
+      author: "E-Cell IIITDM Kancheepuram",
+      date: "October 6, 2024",
+      readTime: "8 min read",
+      category: "Success Stories",
+      image: "/assets/images/blog-cred.jpg",
+      featured: false,
+      content: `Complete content will be in BlogPost.jsx`
+    },
+    {
+      id: 6,
+      title: "Rebel Foods: The Invisible Food Empire",
+      excerpt: "How do you serve every possible food mood from a single invisible location? Discover how Rebel Foods built a multi-billion dollar empire you've probably ordered from without realizing.",
+      author: "E-Cell IIITDM Kancheepuram",
+      date: "October 4, 2024",
+      readTime: "10 min read",
+      category: "Success Stories",
+      image: "/assets/images/blog-rebel-foods.jpg",
+      featured: false,
+      content: `Complete content will be in BlogPost.jsx`
+    },
+    {
+      id: 7,
+      title: "Hustle vs. Burnout: Why Smart Work Wins",
+      excerpt: "We live in a world obsessed with hustle. But constant grind doesn't make you successful—it makes you exhausted. Learn why smart work beats hard work every time.",
+      author: "E-Cell IIITDM Kancheepuram",
+      date: "October 2, 2024",
+      readTime: "7 min read",
+      category: "Entrepreneurship",
+      image: "/assets/images/blog-hustle-burnout.jpg",
+      featured: false,
+      content: `Complete content will be in BlogPost.jsx`
+    },
+    {
+      id: 8,
+      title: "Why 'Copying' Isn't Always Bad in Startups",
+      excerpt: "Most successful startups didn't start from scratch—they started by copying something that already existed. Learn how smart copying becomes strategic innovation.",
+      author: "E-Cell IIITDM Kancheepuram",
+      date: "September 30, 2024",
+      readTime: "7 min read",
+      category: "Entrepreneurship",
+      image: "/assets/images/blog-copying.jpg",
+      featured: false,
+      content: `Complete content will be in BlogPost.jsx`
+    },
+    {
+      id: 9,
+      title: "How Good Is Your Problem Statement?",
+      excerpt: "Every successful venture begins with a deep understanding of a painful problem. Learn how to craft a problem statement that becomes the foundation of your entire startup.",
+      author: "E-Cell IIITDM Kancheepuram",
+      date: "September 25, 2024",
+      readTime: "8 min read",
+      category: "Startup Guide",
+      image: "/assets/images/blog-problem-statement.jpg",
+      featured: false,
+      content: `Complete content will be in BlogPost.jsx`
+    },
+    {
+      id: 10,
+      title: "Who Do You Need & What Resources Do You Need?",
+      excerpt: "A startup is a team sport. Discover the three core archetypes every founding team needs and how to assemble the right people and resources for success.",
+      author: "E-Cell IIITDM Kancheepuram",
+      date: "September 23, 2024",
+      readTime: "7 min read",
+      category: "Startup Guide",
+      image: "/assets/images/blog-team-resources.jpg",
+      featured: false,
+      content: `Complete content will be in BlogPost.jsx`
+    },
+    {
+      id: 11,
+      title: "How to Brainstorm and Choose Your Solution?",
+      excerpt: "Learn the art of expansive brainstorming and ruthless decision-making. Generate hundreds of ideas and then choose the one that will survive and thrive.",
       author: "E-Cell IIITDM Kancheepuram",
       date: "September 21, 2024",
-      readTime: "6 min read",
-      category: "Team Building",
-      image: "/assets/images/blog-team-building.jpg",
+      readTime: "8 min read",
+      category: "Startup Guide",
+      image: "/assets/images/blog-brainstorm.jpg",
       featured: false,
-      content: `
-        <h2>Introduction</h2>
-        <p>Behind every successful startup is a strong, dedicated team. Building the right team is often the difference between success and failure in the startup world.</p>
-        
-        <h2>Identifying Key Roles</h2>
-        <p>Start by identifying the critical roles needed for your startup's success. Focus on hiring for skills gaps that are essential for your immediate goals.</p>
-        
-        <h2>Creating a Strong Culture</h2>
-        <p>Company culture isn't just about perks—it's about creating an environment where talented people can do their best work and grow together.</p>
-      `
+      content: `Complete content will be in BlogPost.jsx`
+    },
+    {
+      id: 12,
+      title: "How to Build Your MVP (Minimum Viable Product)?",
+      excerpt: "The magic is in 'Viable.' Learn how to build the smallest possible version of your product that successfully delivers core value and validates your biggest assumption.",
+      author: "E-Cell IIITDM Kancheepuram",
+      date: "September 19, 2024",
+      readTime: "9 min read",
+      category: "Startup Guide",
+      image: "/assets/images/blog-mvp.jpg",
+      featured: false,
+      content: `Complete content will be in BlogPost.jsx`
+    },
+    {
+      id: 13,
+      title: "How to Test, Get Feedback & Iterate?",
+      excerpt: "An MVP that isn't seen by users is worthless. Master the Build-Measure-Learn loop and turn user feedback into your product roadmap.",
+      author: "E-Cell IIITDM Kancheepuram",
+      date: "September 17, 2024",
+      readTime: "8 min read",
+      category: "Startup Guide",
+      image: "/assets/images/blog-feedback.jpg",
+      featured: false,
+      content: `Complete content will be in BlogPost.jsx`
+    },
+    {
+      id: 14,
+      title: "How to Validate Market & Demand?",
+      excerpt: "A great product that no one wants is useless. Learn quick, clever techniques to test market demand and prove people will actually pay for your solution.",
+      author: "E-Cell IIITDM Kancheepuram",
+      date: "September 15, 2024",
+      readTime: "8 min read",
+      category: "Startup Guide",
+      image: "/assets/images/blog-market-validation.jpg",
+      featured: false,
+      content: `Complete content will be in BlogPost.jsx`
+    },
+    {
+      id: 15,
+      title: "How to Present Your Demo or Pitch?",
+      excerpt: "A mediocre project with a brilliant pitch beats a brilliant project with a mediocre pitch. Master the art of storytelling and deliver a pitch that wins.",
+      author: "E-Cell IIITDM Kancheepuram",
+      date: "September 13, 2024",
+      readTime: "7 min read",
+      category: "Startup Guide",
+      image: "/assets/images/blog-pitch.jpg",
+      featured: false,
+      content: `Complete content will be in BlogPost.jsx`
+    },
+    {
+      id: 16,
+      title: "How to Launch, Grow & Scale Your Startup?",
+      excerpt: "The competition was just the starting line. Learn how to convert hackathon momentum into a real, sustainable business that grows and scales.",
+      author: "E-Cell IIITDM Kancheepuram",
+      date: "September 11, 2024",
+      readTime: "10 min read",
+      category: "Startup Guide",
+      image: "/assets/images/blog-launch-scale.jpg",
+      featured: false,
+      content: `Complete content will be in BlogPost.jsx`
     }
   ]);
 
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const categories = ['All', 'Entrepreneurship', 'Funding', 'Team Building', 'Innovation', 'Success Stories'];
+  const categories = ['All', 'Entrepreneurship', 'Success Stories', 'Startup Guide'];
 
   const filteredBlogs = selectedCategory === 'All' 
     ? blogs 
